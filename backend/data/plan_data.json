@@ -1,0 +1,51 @@
+{
+  "_source": "Extracted directly from workout_plan.md / the uploaded PDF. This is machine-readable reference data for the DB/scheduler layer - workout_plan.md remains the authoritative text the coach agent actually reasons from.",
+  "profile": {
+    "start_weight_kg": 115,
+    "height_cm": 168,
+    "start_waist_cm": 112,
+    "start_bmi": 41
+  },
+  "goals": {
+    "total_target_loss_kg": 25,
+    "duration_months": 18,
+    "weekly_rate_kg_min": 0.3,
+    "weekly_rate_kg_max": 0.6
+  },
+  "phases": [
+    { "phase_number": 1, "target_weight_kg": 105, "label": "Phase 1" },
+    { "phase_number": 2, "target_weight_kg": 95, "label": "Phase 2" },
+    { "phase_number": 3, "target_weight_kg": 90, "label": "Phase 3 / goal" }
+  ],
+  "nutrition_targets": {
+    "calories_min": 1900,
+    "calories_max": 2100,
+    "protein_g_min": 120,
+    "protein_g_max": 140,
+    "water_l_min": 3.5,
+    "water_l_max": 4.0
+  },
+  "steps_target": {
+    "initial_min": 7000,
+    "initial_max": 8000,
+    "progression_target": 10000
+  },
+  "weekly_schedule": {
+    "monday": { "type": "strength", "duration_min": "20-25" },
+    "tuesday": { "type": "cardio", "duration_min": "20-30" },
+    "wednesday": { "type": "strength", "duration_min": "20-25" },
+    "thursday": { "type": "cardio", "duration_min": "20-30" },
+    "friday": { "type": "strength", "duration_min": "20-25" },
+    "saturday": { "type": "optional_light", "duration_min": null },
+    "sunday": { "type": "rest", "duration_min": null }
+  },
+  "constraints": {
+    "ankle_pain": "Prioritize low-impact cardio (walking, stationary cycling, pool). Avoid jogging or jump training until the ankle improves."
+  },
+  "monitoring": {
+    "checkin_frequency": "weekly",
+    "plateau_threshold_weeks": 2.5,
+    "medical_check_frequency_months_min": 6,
+    "medical_check_frequency_months_max": 12
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Release-safe default: no cleartext HTTP anywhere. The debug build variant
+  overrides this (see app/src/debug/AndroidManifest.xml +
+  network_security_config_debug.xml) to allow cleartext for local LAN testing
+  against a backend that doesn't have HTTPS set up yet. Once your backend has
+  a real HTTPS URL (VPS + reverse proxy, or a tunnel service that terminates
+  TLS for you), this file needs no changes - it already requires HTTPS.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

@@ -1,0 +1,4 @@
+{
+  "_deprecated": true,
+  "_note": "Superseded now that the real plan PDF has been provided. The actual plan lives in workout_plan.md (full text, loaded by src/claude.js as the coach's system context) and plan_data.json (structured facts used by the DB/scheduler). This file is kept only so nothing referencing the old path breaks; it is not read by any code."
+}

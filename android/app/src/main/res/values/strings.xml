@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FitCoach Pro</string>
+    <string name="checkin_reminder_channel_name">Daily check-in reminder</string>
+    <string name="checkin_reminder_channel_desc">Reminds you to complete your daily check-in with your coach</string>
+</resources>
